@@ -19,5 +19,9 @@
   "homepage": "https://github.com/yantolie41/yyanto#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "10.6.2",
+    "npm": "6.9.0"
   }
 }
