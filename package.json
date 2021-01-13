@@ -1,0 +1,19 @@
+{
+  "name": "yyanto",
+  "version": "1.0.0",
+  "description": "This is a portofolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yantolie41/yyanto.git"
+  },
+  "author": "Yanto Yanto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yantolie41/yyanto/issues"
+  },
+  "homepage": "https://github.com/yantolie41/yyanto#readme"
+}
