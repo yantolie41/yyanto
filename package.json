@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon dev/server.js",
-    "build": "webpack"
+    "build": "webpack",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,6 @@
   "engines": {
     "node": "6.11.x",
     "npm": "6.9.0"
-  }
+  },
+  "heroku-run-build-script": true
 }
