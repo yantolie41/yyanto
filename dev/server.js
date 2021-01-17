@@ -1,9 +1,12 @@
 const express = require('express')
 const app = express();
 const port = process.env.PORT || 8000;
+const handlebars =  require('express-handlebars')
+
+app.set('view-engine','hbs')
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.render('main', {layout: 'index'});
 });
 
 app.listen(port, () => {
