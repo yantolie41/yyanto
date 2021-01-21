@@ -1,10 +1,14 @@
+
 {
   "name": "yyanto",
   "version": "1.0.0",
   "description": "This is a portofolio website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dev/server.js",
+    "build": "webpack",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/yantolie41/yyanto/issues"
   },
-  "homepage": "https://github.com/yantolie41/yyanto#readme"
+  "homepage": "https://github.com/yantolie41/yyanto#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0"
+  },
+  "engines": {
+    "node": "6.11.x",
+    "npm": "6.9.0"
+  },
+  "heroku-run-build-script": true
 }
