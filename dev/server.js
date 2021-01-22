@@ -4,20 +4,25 @@ const port = process.env.PORT || 8000;
 const handlebars =  require('express-handlebars')
 const path = require('path')
 
+
+
 app.set('view engine','hbs')
 app.set('views', path.join(__dirname, "views"))
 
+
 app.engine('hbs', handlebars({
-  layoutsDir:  __dirname + '/views/layouts',
   extname: 'hbs',
-  defaultLayout: 'main'
+  layoutsDir:  __dirname + '/views/layouts',
+  partialsDir: __dirname + '/views/partials',
+  defaultLayout: 'index'
 }))
 
-app.use(express.static('public'))
+app.use("*/images", express.static('dev/statics/images'));
+
 
 app.get('/', (req, res) => {
 
-  res.render('main', {layout: 'index'})
+  res.render('main')
 });
 
 app.listen(port, () => {
