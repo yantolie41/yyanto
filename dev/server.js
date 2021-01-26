@@ -17,7 +17,7 @@ app.engine('hbs', handlebars({
   defaultLayout: 'index'
 }))
 
-app.use("*/images", express.static('dev/statics/images'));
+app.use('*/images', express.static('dev/statics/images'));
 
 
 app.get('/', (req, res) => {
