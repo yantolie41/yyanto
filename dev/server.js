@@ -22,7 +22,8 @@ app.use('*/images', express.static('dev/statics/images'));
 
 app.get('/', (req, res) => {
 
-  res.render('main')
+  //res.render('main')
+  res.send("Hi")
 });
 
 app.listen(port, () => {
