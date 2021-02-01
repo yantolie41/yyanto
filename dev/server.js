@@ -17,7 +17,7 @@ app.engine('hbs', handlebars({
 }))
 
 app.use('*/images', express.static('dev/statics/images'));
-
+app.use('*/pdf', express.static('dev/statics/pdf'));
 
 //Routes
 app.get('/', function (req, res) {
