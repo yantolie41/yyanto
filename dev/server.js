@@ -13,17 +13,25 @@ app.set('views', path.join(__dirname, "views"))
 app.engine('hbs', handlebars({
   extname: 'hbs',
   layoutsDir:  __dirname + '/views/layouts',
-  partialsDir: __dirname + '/views/partials',
   defaultLayout: 'index'
 }))
 
 app.use('*/images', express.static('dev/statics/images'));
 
 
-app.get('/', (req, res) => {
-    res.render("main")
-  //res.send("Hi")
-});
+//Routes
+app.get('/', function (req, res) {
+  res.render("main")
+})
+app.get('/about', function (req, res) {
+  res.render(path.join(__dirname + '/views/partials/about'))
+})
+app.get('/about/education', function (req, res) {
+  res.render(path.join(__dirname + '/views/partials/education'))
+})
+app.get('/about/work_experience', function (req, res) {
+  res.render(path.join(__dirname + '/views/partials/workExperience'))
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`)
