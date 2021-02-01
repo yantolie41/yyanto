@@ -32,6 +32,7 @@ app.get('/about/education', function (req, res) {
 app.get('/about/work_experience', function (req, res) {
   res.render(path.join(__dirname + '/views/partials/workExperience'))
 })
+//
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`)
