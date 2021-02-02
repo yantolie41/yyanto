@@ -32,6 +32,9 @@ app.get('/about/education', function (req, res) {
 app.get('/about/work_experience', function (req, res) {
   res.render(path.join(__dirname + '/views/partials/workExperience'))
 })
+app.get('/contact', function (req, res) {
+  res.render(path.join(__dirname + '/views/partials/contact'))
+})
 //
 
 app.listen(port, () => {
