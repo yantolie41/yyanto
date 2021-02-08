@@ -8,8 +8,8 @@
     }
 
     .img-thumbnail{
-        width:10%; 
-        height: 70px;
+        min-width:5.5%; 
+        height: 60px;
         border: 0;
     }
 
@@ -17,6 +17,7 @@
         font-weight: bold;
         color: azure;
     }
+
      #picDiv{
       background-image: radial-gradient(#212121 20%, transparent 20%), radial-gradient(#fafafa 20%, transparent 20%);
         background-size: 15px 15px;
@@ -25,34 +26,30 @@
      }
 
 </style>
-<div class="container-fluid mt-5">
-     <div class="row" style="width: 100%;">
-         <div class="col-7">
-             <div class="card" style="height:530px; border: 0; background-color:whitesmoke; ">
-                  <div class="card-body mt-5 ml-5">
-                      <div class="col ml-5">
-                        <h2>Hello, I'm</h2>
-                        <h2><b>Yanto Yanto</b></h2>
-                        <h3>Information Technology Graduate</h3>
-                    </div>
-                        <div class="col mt-3 mb-5 pb-5" id="box" style="text-align: center;">
-                            <a class="btn mt-5 mb-3" href="#" onclick="window.open('/dev/statics/pdf/Resume.pdf', '_blank', 'fullscreen=yes');" style="background-color:cadetblue; font-family: Comic Sans MS; width:400px; height: 50px; font-size: 25px;">
+     <div class="row" style="background-color:whitesmoke;">
+                 <div class="row ml-5 mt-5 mr-4">
+                      <div class="col-sm col-lg-6 ml-lg-5 pl-lg-5 pt-5">
+                        <h2 class="ml-4">Hello, I'm</h2>
+                        <h2 class="ml-4"><b>Yanto Yanto</b></h2>
+                        <h3 class="ml-4">Information Technology Graduate</h3>
+                         <a class="btn mt-5 mb-3 ml-lg-5 l-5" href="#" onclick="window.open('/dev/statics/pdf/Resume.pdf', '_blank', 'fullscreen=yes');" style="background-color:cadetblue; font-family: Comic Sans MS; width:400px; height: 50px; font-size: 25px;">
                                 See My Resume
-                             </a>
-                        </div>
-                        <div class="col" style="text-align:center;">
-                            <a href="https://www.facebook.com/yanto.lie2/"><img class="img-thumbnail mr-4"style="width:11%;" src="/dev/statics/images/facebook.png" alt="facebook"></a>
+                         </a>
+                           <div class="col mt-5 mb-5 pt-5 " style="text-align:center;">
+                            <a href="https://www.facebook.com/yanto.lie2/"><img class="img-thumbnail mr-4"style="min-width:6.4%;" src="/dev/statics/images/facebook.png" alt="facebook"></a>
                              <a href="https://www.linkedin.com/in/yanto-yanto-286024144/"><img class="img-thumbnail mr-4" src="/dev/statics/images/linkedin.png" alt="linkedin"></a>
                              <a href="https://www.instagram.com/yantolie41/"><img class="img-thumbnail mr-4" src="/dev/statics/images/instagram.png" alt="instagram"></a>
                              <a href="https://github.com/yantolie41/"><img class="img-thumbnail" src="/dev/statics/images/github.png" alt="github"></a> 
-                        </div>
+                          </div>
+                      </div>
+                       <div class="col-sm col-lg-4" id="picDiv" style="text-align: right;">
+                            <img class="img-fluid" src="/dev/statics/images/img1.0.jpg" style="width:100%; height:480px;"/>
+                      </div>
+
                 </div>
-             </div>
-         </div>
-         <div class="col-4" id="picDiv" style="text-align: right;">
-             <img class="img-fluid" src="/dev/statics/images/img1.0.jpg" style="width:100%; height:520px;"/>
-         </div>
+        
+         
      </div>
-</div>
+
    
 
