@@ -2,12 +2,9 @@
   "name": "yyanto",
   "version": "1.0.0",
   "description": "This is a portofolio website",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dev/server.js",
-    "build": "webpack",
-    "heroku-postbuild": "echo Skip build on Heroku"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,14 +17,7 @@
   },
   "homepage": "https://github.com/yantolie41/yyanto#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.0"
-  },
-  "engines": {
-    "node": "10.16.2",
-    "npm": "6.9.0"
-  },
-  "heroku-run-build-script": true
+    "express-handlebars": "^6.0.1"
+  }
 }
