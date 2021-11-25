@@ -18,6 +18,6 @@
   "homepage": "https://github.com/yantolie41/yyanto#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^6.0.1"
+    "express-handlebars": "^5.2.0"
   }
 }
